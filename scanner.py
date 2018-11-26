@@ -86,7 +86,7 @@ def download_wrap(book):
     except:
         failed.add(fname)
         with open("without_pdf_books.txt", "a") as out_file:
-            out_file.write(' '.join([book['title'], book['urls']['access'], '\n']))
+            out_file.write(' '.join([book['title'] + '(%d)'%book['stars'], book['urls']['access'], '\n']))
 
 
 finished = set()
@@ -135,7 +135,7 @@ def gen_markdown(bookcase, sort_key='stars'):
     #print(dumps(ranking[:5], indent=4, sort_keys=True, ensure_ascii=False))
 
     writer = MarkdownTableWriter()
-    writer.table_name = "Gitbook \n*%d books sort by %s @ %s*\n" % (len(ranking),sort_key, datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
+    writer.table_name = "Gitbook \n*%d books sort by %s @ %s*\n> List too long so github auto omit last part. You can download READ.md for get full list.\n" % (len(ranking),sort_key, datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
     writer.header_list = ["Title", "Author", "Stars", "Subscriptions", "Download"]
     writer.value_matrix = []
     writer.align_list = [Align.LEFT, Align.LEFT, Align.CENTER, Align.CENTER, Align.LEFT]
