@@ -42,7 +42,6 @@ def save_dict(file, data):
     except Exception:
         exc_type, exc_obj, exc_tb = sys.exc_info()
         exc_msg = ''.join(traceback.format_exception(exc_type, exc_obj, exc_tb)).rstrip()
-        print('[Save Fail]', file, '>>>', exc_msg)
     return False
 
 def load_dict(file):
@@ -76,8 +75,40 @@ class HasNextIterator:
         return val
 
 
-def download_all(bookcase):
-    return
+def download_wrap(book):
+    try:
+        url = book['urls']['download']['pdf']
+        fname = "%s_%s.pdf" % (url.split('/')[-1], book['author'])
+        fullname = './gitbooks/%s' % fname
+        if not os.path.isfile(fullname):
+            axel(url, output_path='./gitbooks/%s' % fname, num_connections=10)
+        finished.add(fname)
+    except:
+        failed.add(fname)
+        with open("without_pdf_books.txt", "a") as out_file:
+            out_file.write(' '.join([book['title'], book['urls']['access'], '\n']))
+
+
+finished = set()
+failed = set()
+def download_all(books):
+    if os.path.isfile("without_pdf_books.txt"):
+        os.remove("without_pdf_books.txt")
+    total = 0
+    for book in books:
+        if book['stars'] > 10 or book['subscriptions'] > 10 :
+            total = total + 1
+    with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
+        for book in books:
+            if book['stars'] > 10 or book['subscriptions'] > 10 :
+                executor.submit(download_wrap, book)
+        while True:
+            sys.stdout.write("Downloading... (%d / %d)" %(len(finished), total) + "\r")
+            if len(finished) + len(failed) == total:
+                [print('Download done                                  ')]
+                break
+            else:
+                time.sleep(1)
 
 
 header = '''
@@ -108,7 +139,7 @@ def gen_markdown(bookcase, sort_key='stars'):
     writer.header_list = ["Title", "Author", "Stars", "Subscriptions", "Download"]
     writer.value_matrix = []
     writer.align_list = [Align.LEFT, Align.LEFT, Align.CENTER, Align.CENTER, Align.LEFT]
-    for book in ranking[:]:
+    for book in ranking:
         writer.value_matrix.append([
                 '[%s](%s)' % (book["title"], book["urls"]['access']),
                 '[%s](https://legacy.gitbook.com/@%s)' % (book["author"], book["author"]),
@@ -125,6 +156,14 @@ def gen_markdown(bookcase, sort_key='stars'):
         readme.write(header)
         writer.stream = readme
         writer.write_table()
+    return ranking
+
+
+def scan_book(book):
+    # sample
+    # https://legacy.gitbook.com/book/eyesofkids/javascript-start-from-es6/subscriptions
+    # https://legacy.gitbook.com/book/eyesofkids/javascript-start-from-es6/stars
+    return
 
 
 postfix = {
@@ -195,6 +234,7 @@ futs = []
 scan_itr = HasNextIterator(scan_queue)
 with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
     while True:
+        sys.stdout.write("Scanning... (%d / %d)" %(len(bookcase), len(scanning)) + "\r")
         if scan_itr.has_next():
             author = scan_itr.next()
             if author not in scanning and author not in blacklist:
@@ -203,6 +243,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
         else:
             if all(fut.done() for fut in futs):
                 if scanning.issubset(bookcase):
+                    print('Scan done                                  ')
                     break
                 else:
                     unhandle = scanning.difference(bookcase)
@@ -211,13 +252,8 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
             else:
                 time.sleep(1)
 
-        sys.stdout.write("Scanning... (%d / %d)" %(len(bookcase), len(scanning)) + "\r")
-
 save_dict('bookcase.json', bookcase)
 save_dict('authors.json', list(bookcase.keys()))
 
-gen_markdown(bookcase)
-
-download_all(bookcase)
-
-#file_path = axel('https://legacy.gitbook.com/download/pdf/book/llh911001/mostly-adequate-guide-chinese', num_connections=500)
+sorted_list = gen_markdown(bookcase)
+#download_all(sorted_list)
