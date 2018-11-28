@@ -75,16 +75,12 @@ class HasNextIterator:
         return val
 
 
-def download_wrap(book):
+def download_wrap(filename, url):
     try:
-        url = book['urls']['download']['pdf']
-        fname = "%s_%s.pdf" % (url.split('/')[-1], book['author'])
-        fullname = './gitbooks/%s' % fname
-        if not os.path.isfile(fullname):
-            axel(url, output_path='./gitbooks/%s' % fname, num_connections=10)
-        finished.add(fname)
+        axel(url, output_path=filename % fname, num_connections=10)
+        finished.add(filename)
     except:
-        failed.add(fname)
+        failed.add(filename)
         with open("without_pdf_books.txt", "a") as out_file:
             out_file.write(' '.join([book['title'] + '(%d)'%book['stars'], book['urls']['access'], '\n']))
 
@@ -94,18 +90,21 @@ failed = set()
 def download_all(books):
     if os.path.isfile("without_pdf_books.txt"):
         os.remove("without_pdf_books.txt")
-    total = 0
+    download_queue = []
     for book in books:
-        if book['stars'] > 10 or book['subscriptions'] > 10 :
-            total = total + 1
+        url = book['urls']['download']['pdf']
+        fname = "%s_%s.pdf" % (url.split('/')[-1], book['author'])
+        fullname = './gitbooks/%s' % fname
+        if not os.path.isfile(fullname) and \
+           (book['stars'] > 10 or book['subscriptions'] > 10):
+            download_queue.append((fullname, url))
     with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
-        for book in books:
-            if book['stars'] > 10 or book['subscriptions'] > 10 :
-                executor.submit(download_wrap, book)
+        for download_item in download_queue:
+            executor.submit(download_wrap, download_item[0], download_item[1])
         while True:
-            sys.stdout.write("Downloading... (%d / %d)" %(len(finished), total) + "\r")
-            if len(finished) + len(failed) == total:
-                [print('Download done                                  ')]
+            sys.stdout.write("Downloading... (%d / %d)" %(len(finished), len(download_queue)) + "\r")
+            if len(finished) + len(failed) == len(download_queue):
+                print('Download (%d) done                                  ' % len(finished))
                 break
             else:
                 time.sleep(1)
@@ -244,7 +243,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
         else:
             if all(fut.done() for fut in futs):
                 if scanning.issubset(bookcase):
-                    print('Scan done                                  ')
+                    print('Scanned (%d) done                                  ' % len(scanning))
                     break
                 else:
                     unhandle = scanning.difference(bookcase)
@@ -257,4 +256,4 @@ save_dict('bookcase.json', bookcase)
 save_dict('authors.json', list(bookcase.keys()))
 
 sorted_list = gen_markdown(bookcase)
-#download_all(sorted_list)
+download_all(sorted_list)

@@ -13,7 +13,7 @@ You could pull a request add some good authors I missed in **authors.json**. I w
 
 Vincent
 # Gitbook 
-*1646 books sort by stars @ 2018-11-28 07:56:59 (UTC)*
+*1646 books sort by stars @ 2018-11-28 08:18:17 (UTC)*
 > List too long so github auto omit last part. You can download READ.md for get full list.
 
 |                                                                             Title                                                                              |                                          Author                                          |Stars|Subscriptions|                                                                                                                                                                                              Download                                                                                                                                                                                               |
