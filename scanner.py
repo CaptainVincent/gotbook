@@ -135,7 +135,7 @@ def gen_markdown(bookcase, sort_key='stars'):
     #print(dumps(ranking[:5], indent=4, sort_keys=True, ensure_ascii=False))
 
     writer = MarkdownTableWriter()
-    writer.table_name = "Gitbook \n*%d books sort by %s @ %s*\n> List too long so github auto omit last part. You can download READ.md for get full list.\n" % (len(ranking),sort_key, datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
+    writer.table_name = "Gitbook \n*%d books sort by %s @ %s (UTC)*\n> List too long so github auto omit last part. You can download READ.md for get full list.\n" % (len(ranking),sort_key, datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
     writer.header_list = ["Title", "Author", "Stars", "Subscriptions", "Download"]
     writer.value_matrix = []
     writer.align_list = [Align.LEFT, Align.LEFT, Align.CENTER, Align.CENTER, Align.LEFT]
@@ -223,6 +223,7 @@ def scan_author(name):
 
 
 bookcase = load_dict('bookcase.json')
+already_count = len(bookcase)
 authors = load_dict('authors.json')
 blacklist = set()
 scan_queue = [author for author in authors if author not in bookcase]
@@ -234,7 +235,7 @@ futs = []
 scan_itr = HasNextIterator(scan_queue)
 with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
     while True:
-        sys.stdout.write("Scanning... (%d / %d)" %(len(bookcase), len(scanning)) + "\r")
+        sys.stdout.write("Scanning... (%d / %d)" %(len(bookcase) - already_count, len(scanning)) + "\r")
         if scan_itr.has_next():
             author = scan_itr.next()
             if author not in scanning and author not in blacklist:

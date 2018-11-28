@@ -8593,6 +8593,122 @@
             }
         }
     },
+    "jackaudrey": {
+        "Machina learning(机器学习)": {
+            "author": "jackaudrey",
+            "stars": 0,
+            "subscriptions": 1,
+            "title": "Machina learning(机器学习)",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/jackaudrey/machina-learning",
+                "content": "https://jackaudrey.gitbooks.io/machina-learning/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/jackaudrey/machina-learning",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/jackaudrey/machina-learning",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/jackaudrey/machina-learning"
+                },
+                "edit": "https://legacy.gitbook.com/book/jackaudrey/machina-learning/edit",
+                "git": "https://git.gitbook.com/jackaudrey/machina-learning.git",
+                "homepage": "https://jackaudrey.gitbooks.io/machina-learning/",
+                "read": "https://legacy.gitbook.com/read/book/jackaudrey/machina-learning"
+            }
+        },
+        "Python之MatPlotlib教程": {
+            "author": "jackaudrey",
+            "stars": 0,
+            "subscriptions": 1,
+            "title": "Python之MatPlotlib教程",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/jackaudrey/python-matplotlib",
+                "content": "https://jackaudrey.gitbooks.io/python-matplotlib/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/jackaudrey/python-matplotlib",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/jackaudrey/python-matplotlib",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/jackaudrey/python-matplotlib"
+                },
+                "edit": "https://legacy.gitbook.com/book/jackaudrey/python-matplotlib/edit",
+                "git": "https://git.gitbook.com/jackaudrey/python-matplotlib.git",
+                "homepage": "https://jackaudrey.gitbooks.io/python-matplotlib/",
+                "read": "https://legacy.gitbook.com/read/book/jackaudrey/python-matplotlib"
+            }
+        },
+        "Python之Numpy教程": {
+            "author": "jackaudrey",
+            "stars": 0,
+            "subscriptions": 2,
+            "title": "Python之Numpy教程",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/jackaudrey/python-numpy",
+                "content": "https://jackaudrey.gitbooks.io/python-numpy/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/jackaudrey/python-numpy",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/jackaudrey/python-numpy",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/jackaudrey/python-numpy"
+                },
+                "edit": "https://legacy.gitbook.com/book/jackaudrey/python-numpy/edit",
+                "git": "https://git.gitbook.com/jackaudrey/python-numpy.git",
+                "homepage": "https://jackaudrey.gitbooks.io/python-numpy/",
+                "read": "https://legacy.gitbook.com/read/book/jackaudrey/python-numpy"
+            }
+        },
+        "Python之Pandas教程": {
+            "author": "jackaudrey",
+            "stars": 0,
+            "subscriptions": 1,
+            "title": "Python之Pandas教程",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/jackaudrey/python-pandas",
+                "content": "https://jackaudrey.gitbooks.io/python-pandas/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/jackaudrey/python-pandas",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/jackaudrey/python-pandas",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/jackaudrey/python-pandas"
+                },
+                "edit": "https://legacy.gitbook.com/book/jackaudrey/python-pandas/edit",
+                "git": "https://git.gitbook.com/jackaudrey/python-pandas.git",
+                "homepage": "https://jackaudrey.gitbooks.io/python-pandas/",
+                "read": "https://legacy.gitbook.com/read/book/jackaudrey/python-pandas"
+            }
+        },
+        "Python之Sklearn库": {
+            "author": "jackaudrey",
+            "stars": 0,
+            "subscriptions": 1,
+            "title": "Python之Sklearn库",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/jackaudrey/python-sklearn",
+                "content": "https://jackaudrey.gitbooks.io/python-sklearn/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/jackaudrey/python-sklearn",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/jackaudrey/python-sklearn",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/jackaudrey/python-sklearn"
+                },
+                "edit": "https://legacy.gitbook.com/book/jackaudrey/python-sklearn/edit",
+                "git": "https://git.gitbook.com/jackaudrey/python-sklearn.git",
+                "homepage": "https://jackaudrey.gitbooks.io/python-sklearn/",
+                "read": "https://legacy.gitbook.com/read/book/jackaudrey/python-sklearn"
+            }
+        },
+        "点点滴滴汇成水": {
+            "author": "jackaudrey",
+            "stars": 0,
+            "subscriptions": 1,
+            "title": "点点滴滴汇成水",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/jackaudrey/a-little-of-water",
+                "content": "https://jackaudrey.gitbooks.io/a-little-of-water/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/jackaudrey/a-little-of-water",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/jackaudrey/a-little-of-water",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/jackaudrey/a-little-of-water"
+                },
+                "edit": "https://legacy.gitbook.com/book/jackaudrey/a-little-of-water/edit",
+                "git": "https://git.gitbook.com/jackaudrey/a-little-of-water.git",
+                "homepage": "https://jackaudrey.gitbooks.io/a-little-of-water/",
+                "read": "https://legacy.gitbook.com/read/book/jackaudrey/a-little-of-water"
+            }
+        }
+    },
     "jackychi": {
         "MacTalk·跨越边界": {
             "author": "jackychi",
@@ -9828,6 +9944,103 @@
                 "git": "https://git.gitbook.com/jobrest/how-google-works.git",
                 "homepage": "https://jobrest.gitbooks.io/how-google-works/",
                 "read": "https://legacy.gitbook.com/read/book/jobrest/how-google-works"
+            }
+        }
+    },
+    "jobyu": {
+        "RPGMaker官方像素画教程": {
+            "author": "jobyu",
+            "stars": 28,
+            "subscriptions": 1,
+            "title": "RPGMaker官方像素画教程",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/jobyu/rpgmakerpixeltutorials",
+                "content": "https://jobyu.gitbooks.io/rpgmakerpixeltutorials/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/jobyu/rpgmakerpixeltutorials",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/jobyu/rpgmakerpixeltutorials",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/jobyu/rpgmakerpixeltutorials"
+                },
+                "edit": "https://legacy.gitbook.com/book/jobyu/rpgmakerpixeltutorials/edit",
+                "git": "https://git.gitbook.com/jobyu/rpgmakerpixeltutorials.git",
+                "homepage": "https://jobyu.gitbooks.io/rpgmakerpixeltutorials/",
+                "read": "https://legacy.gitbook.com/read/book/jobyu/rpgmakerpixeltutorials"
+            }
+        },
+        "Sprite Art Pixel Art Tutorials 中文版": {
+            "author": "jobyu",
+            "stars": 12,
+            "subscriptions": 1,
+            "title": "Sprite Art Pixel Art Tutorials 中文版",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/jobyu/sprite-art-pixel-art-tutorials-chinese",
+                "content": "https://jobyu.gitbooks.io/sprite-art-pixel-art-tutorials-chinese/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/jobyu/sprite-art-pixel-art-tutorials-chinese",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/jobyu/sprite-art-pixel-art-tutorials-chinese",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/jobyu/sprite-art-pixel-art-tutorials-chinese"
+                },
+                "edit": "https://legacy.gitbook.com/book/jobyu/sprite-art-pixel-art-tutorials-chinese/edit",
+                "git": "https://git.gitbook.com/jobyu/sprite-art-pixel-art-tutorials-chinese.git",
+                "homepage": "https://jobyu.gitbooks.io/sprite-art-pixel-art-tutorials-chinese/",
+                "read": "https://legacy.gitbook.com/read/book/jobyu/sprite-art-pixel-art-tutorials-chinese"
+            }
+        },
+        "[Open game art]像素画系列教程 ": {
+            "author": "jobyu",
+            "stars": 21,
+            "subscriptions": 1,
+            "title": "[Open game art]像素画系列教程 ",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/jobyu/open-game-art-pixeltutorial",
+                "content": "https://jobyu.gitbooks.io/open-game-art-pixeltutorial/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/jobyu/open-game-art-pixeltutorial",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/jobyu/open-game-art-pixeltutorial",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/jobyu/open-game-art-pixeltutorial"
+                },
+                "edit": "https://legacy.gitbook.com/book/jobyu/open-game-art-pixeltutorial/edit",
+                "git": "https://git.gitbook.com/jobyu/open-game-art-pixeltutorial.git",
+                "homepage": "https://jobyu.gitbooks.io/open-game-art-pixeltutorial/",
+                "read": "https://legacy.gitbook.com/read/book/jobyu/open-game-art-pixeltutorial"
+            }
+        },
+        "《So you want be a pixel artist?》中文版": {
+            "author": "jobyu",
+            "stars": 24,
+            "subscriptions": 2,
+            "title": "《So you want be a pixel artist?》中文版",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/jobyu/so_you_want_be_a_pixel_artist_chinese",
+                "content": "https://jobyu.gitbooks.io/so_you_want_be_a_pixel_artist_chinese/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/jobyu/so_you_want_be_a_pixel_artist_chinese",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/jobyu/so_you_want_be_a_pixel_artist_chinese",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/jobyu/so_you_want_be_a_pixel_artist_chinese"
+                },
+                "edit": "https://legacy.gitbook.com/book/jobyu/so_you_want_be_a_pixel_artist_chinese/edit",
+                "git": "https://git.gitbook.com/jobyu/so_you_want_be_a_pixel_artist_chinese.git",
+                "homepage": "https://jobyu.gitbooks.io/so_you_want_be_a_pixel_artist_chinese/",
+                "read": "https://legacy.gitbook.com/read/book/jobyu/so_you_want_be_a_pixel_artist_chinese"
+            }
+        },
+        "非常经典的像素画教程": {
+            "author": "jobyu",
+            "stars": 24,
+            "subscriptions": 1,
+            "title": "非常经典的像素画教程",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/jobyu/classic_pixel_art_tutorial",
+                "content": "https://jobyu.gitbooks.io/classic_pixel_art_tutorial/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/jobyu/classic_pixel_art_tutorial",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/jobyu/classic_pixel_art_tutorial",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/jobyu/classic_pixel_art_tutorial"
+                },
+                "edit": "https://legacy.gitbook.com/book/jobyu/classic_pixel_art_tutorial/edit",
+                "git": "https://git.gitbook.com/jobyu/classic_pixel_art_tutorial.git",
+                "homepage": "https://jobyu.gitbooks.io/classic_pixel_art_tutorial/",
+                "read": "https://legacy.gitbook.com/read/book/jobyu/classic_pixel_art_tutorial"
             }
         }
     },
@@ -14646,6 +14859,27 @@
                 "git": "https://git.gitbook.com/nicesu/wiki.git",
                 "homepage": "https://nicesu.gitbooks.io/wiki/",
                 "read": "https://legacy.gitbook.com/read/book/nicesu/wiki"
+            }
+        }
+    },
+    "normanbb": {
+        "《跟老齐学Python》gitbook版": {
+            "author": "normanbb",
+            "stars": 235,
+            "subscriptions": 41,
+            "title": "《跟老齐学Python》gitbook版",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/normanbb/test",
+                "content": "https://normanbb.gitbooks.io/test/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/normanbb/test",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/normanbb/test",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/normanbb/test"
+                },
+                "edit": "https://legacy.gitbook.com/book/normanbb/test/edit",
+                "git": "https://git.gitbook.com/normanbb/test.git",
+                "homepage": "https://normanbb.gitbooks.io/test/",
+                "read": "https://legacy.gitbook.com/read/book/normanbb/test"
             }
         }
     },
