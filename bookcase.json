@@ -5426,8 +5426,8 @@
         },
         "Front-end Developer Handbook 2016": {
             "author": "frontendmasters",
-            "stars": 3108,
-            "subscriptions": 803,
+            "stars": 3110,
+            "subscriptions": 804,
             "title": "Front-end Developer Handbook 2016",
             "urls": {
                 "access": "https://legacy.gitbook.com/book/frontendmasters/front-end-handbook",
@@ -5445,7 +5445,7 @@
         },
         "Front-end Developer Handbook 2017": {
             "author": "frontendmasters",
-            "stars": 2761,
+            "stars": 2760,
             "subscriptions": 643,
             "title": "Front-end Developer Handbook 2017",
             "urls": {
@@ -5464,8 +5464,8 @@
         },
         "Front-end Developer Handbook 2018": {
             "author": "frontendmasters",
-            "stars": 321,
-            "subscriptions": 80,
+            "stars": 323,
+            "subscriptions": 81,
             "title": "Front-end Developer Handbook 2018",
             "urls": {
                 "access": "https://legacy.gitbook.com/book/frontendmasters/front-end-developer-handbook-2018",
@@ -5483,7 +5483,7 @@
         },
         "React Enlightenment": {
             "author": "frontendmasters",
-            "stars": 505,
+            "stars": 506,
             "subscriptions": 115,
             "title": "React Enlightenment",
             "urls": {
@@ -5938,7 +5938,7 @@
         },
         "GitBook Help Center": {
             "author": "gitbookio",
-            "stars": 20,
+            "stars": 21,
             "subscriptions": 15,
             "title": "GitBook Help Center",
             "urls": {
@@ -11559,6 +11559,27 @@
                 "git": "https://git.gitbook.com/kosmoscosmos/the-way-to-spyider.git",
                 "homepage": "https://kosmoscosmos.gitbooks.io/the-way-to-spyider/",
                 "read": "https://legacy.gitbook.com/read/book/kosmoscosmos/the-way-to-spyider"
+            }
+        }
+    },
+    "krasimir": {
+        "React in patterns": {
+            "author": "krasimir",
+            "stars": 109,
+            "subscriptions": 32,
+            "title": "React in patterns",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/krasimir/react-in-patterns",
+                "content": "https://krasimir.gitbooks.io/react-in-patterns/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/krasimir/react-in-patterns",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/krasimir/react-in-patterns",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/krasimir/react-in-patterns"
+                },
+                "edit": "https://legacy.gitbook.com/book/krasimir/react-in-patterns/edit",
+                "git": "https://git.gitbook.com/krasimir/react-in-patterns.git",
+                "homepage": "https://krasimir.gitbooks.io/react-in-patterns/",
+                "read": "https://legacy.gitbook.com/read/book/krasimir/react-in-patterns"
             }
         }
     },
@@ -18319,6 +18340,46 @@
                 "git": "https://git.gitbook.com/summarychm/es6tutorial.git",
                 "homepage": "https://summarychm.gitbooks.io/es6tutorial/",
                 "read": "https://legacy.gitbook.com/read/book/summarychm/es6tutorial"
+            }
+        }
+    },
+    "sushi2k": {
+        "OWASP Mobile Security Testing Guide": {
+            "author": "sushi2k",
+            "stars": 50,
+            "subscriptions": 20,
+            "title": "OWASP Mobile Security Testing Guide",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/sushi2k/the-owasp-mobile-security-testing-guide",
+                "content": "https://sushi2k.gitbooks.io/the-owasp-mobile-security-testing-guide/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/sushi2k/the-owasp-mobile-security-testing-guide",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/sushi2k/the-owasp-mobile-security-testing-guide",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/sushi2k/the-owasp-mobile-security-testing-guide"
+                },
+                "edit": "https://legacy.gitbook.com/book/sushi2k/the-owasp-mobile-security-testing-guide/edit",
+                "git": "https://git.gitbook.com/sushi2k/the-owasp-mobile-security-testing-guide.git",
+                "homepage": "https://sushi2k.gitbooks.io/the-owasp-mobile-security-testing-guide/",
+                "read": "https://legacy.gitbook.com/read/book/sushi2k/the-owasp-mobile-security-testing-guide"
+            }
+        },
+        "OWASP Mobile Security Testing Guide ": {
+            "author": "sushi2k",
+            "stars": 1,
+            "subscriptions": 1,
+            "title": "OWASP Mobile Security Testing Guide ",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/sushi2k/owasp-mobile-security-testing-guide",
+                "content": "https://sushi2k.gitbooks.io/owasp-mobile-security-testing-guide/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/sushi2k/owasp-mobile-security-testing-guide",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/sushi2k/owasp-mobile-security-testing-guide",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/sushi2k/owasp-mobile-security-testing-guide"
+                },
+                "edit": "https://legacy.gitbook.com/book/sushi2k/owasp-mobile-security-testing-guide/edit",
+                "git": "https://git.gitbook.com/sushi2k/owasp-mobile-security-testing-guide.git",
+                "homepage": "https://sushi2k.gitbooks.io/owasp-mobile-security-testing-guide/",
+                "read": "https://legacy.gitbook.com/read/book/sushi2k/owasp-mobile-security-testing-guide"
             }
         }
     },
