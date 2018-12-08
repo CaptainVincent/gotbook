@@ -13,7 +13,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 import concurrent.futures
 from axel import axel
 
-from pytablewriter import Align, MarkdownTableWriter
+from tabulate import tabulate
 
 
 # python 3 version
@@ -131,30 +131,25 @@ def gen_markdown(bookcase, sort_key='stars'):
         ranking.extend(books.values())
 
     ranking = sorted(ranking, key=lambda k: k[sort_key], reverse=True)
-    #print(dumps(ranking[:5], indent=4, sort_keys=True, ensure_ascii=False))
 
-    writer = MarkdownTableWriter()
-    writer.table_name = "Gitbook \n*%d books sort by %s @ %s (UTC)*\n> List too long so github auto omit last part. You can download READ.md for get full list.\n" % (len(ranking),sort_key, datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
-    writer.header_list = ["Title", "Author", "Stars", "Subscriptions", "Download"]
-    writer.value_matrix = []
-    writer.align_list = [Align.LEFT, Align.LEFT, Align.CENTER, Align.CENTER, Align.LEFT]
+    headers = ["Title", "Author", "Stars", "Subscriptions", "Download"]
+    table = []
+    description = "# Gitbook \n*%d books sort by %s @ %s (UTC)*\n> List too long so github auto omit last part. You can download READ.md for get full list.\n" % (len(ranking),sort_key, datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
     for book in ranking:
-        writer.value_matrix.append([
-                '[%s](%s)' % (book["title"], book["urls"]['access']),
-                '[%s](https://legacy.gitbook.com/@%s)' % (book["author"], book["author"]),
-                book["stars"],
-                book["subscriptions"],
-                '[mobi](%s) | [epub](%s) | [pdf](%s) ' % (
-                        book['urls']['download']['mobi'],
-                        book['urls']['download']['epub'],
-                        book['urls']['download']['pdf']
-                    )
-            ])
-
-    with open("README.md", "w") as readme:
-        readme.write(header)
-        writer.stream = readme
-        writer.write_table()
+        table.append([
+            '[%s](%s)' % (book["title"].replace('|', '\\|'), book["urls"]['access']),
+            '[%s](https://legacy.gitbook.com/@%s)' % (book["author"], book["author"]),
+            book["stars"],
+            book["subscriptions"],
+            '[mobi](%s) \| [epub](%s) \| [pdf](%s) ' % (
+                    book['urls']['download']['mobi'],
+                    book['urls']['download']['epub'],
+                    book['urls']['download']['pdf']
+                )
+        ])
+    print(header, file=open("README.md", "w"))
+    print(description, file=open("README.md", "a"))
+    print(tabulate(table, headers, tablefmt="pipe"), file=open("README.md", "a"))
     return ranking
 
 
