@@ -29336,6 +29336,27 @@
             }
         }
     },
+    "xapax": {
+        "Security - My notepad": {
+            "author": "xapax",
+            "stars": 48,
+            "subscriptions": 21,
+            "title": "Security - My notepad",
+            "urls": {
+                "access": "https://legacy.gitbook.com/book/xapax/security",
+                "content": "https://xapax.gitbooks.io/security/content/",
+                "download": {
+                    "epub": "https://legacy.gitbook.com/download/epub/book/xapax/security",
+                    "mobi": "https://legacy.gitbook.com/download/mobi/book/xapax/security",
+                    "pdf": "https://legacy.gitbook.com/download/pdf/book/xapax/security"
+                },
+                "edit": "https://legacy.gitbook.com/book/xapax/security/edit",
+                "git": "https://git.gitbook.com/xapax/security.git",
+                "homepage": "https://xapax.gitbooks.io/security/",
+                "read": "https://legacy.gitbook.com/read/book/xapax/security"
+            }
+        }
+    },
     "xcatliu": {
         "TypeScript 入门教程": {
             "author": "xcatliu",

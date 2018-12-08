@@ -77,12 +77,12 @@ class HasNextIterator:
 
 def download_wrap(filename, url):
     try:
-        axel(url, output_path=filename % fname, num_connections=10)
+        axel(url, output_path=filename, num_connections=10)
         finished.add(filename)
     except:
         failed.add(filename)
         with open("without_pdf_books.txt", "a") as out_file:
-            out_file.write(' '.join([book['title'] + '(%d)'%book['stars'], book['urls']['access'], '\n']))
+            out_file.write(' '.join([filename, '\n']))
 
 
 finished = set()
